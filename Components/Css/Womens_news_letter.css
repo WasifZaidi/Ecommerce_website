@@ -1,0 +1,179 @@
+.Womens_news_letter{
+    width: 100%;
+    padding: 0vw 0vw;
+    padding-top: 5vw;
+    gap: 4vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'Cabin';
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.Womens_news_letter .left{
+    width: 50%;
+}
+.Womens_news_letter .right{
+    width: 50%;
+}
+.Womens_news_letter .left .img{
+    width: 100%;
+}
+.Womens_news_letter .left .img img{
+    width: 100%;
+    display: block;
+}
+.Womens_news_letter .right{
+    width: 50%;
+}
+.Womens_news_letter .right .text{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1vw;
+}
+.Womens_news_letter .right .text b{
+    font-size: 2.5vw;
+    color: rgb(255, 64, 64);
+}
+.Womens_news_letter .right .text h1{
+    font-size: 3.5vw;
+}
+.Womens_news_letter .right .text p{
+    font-size: 1.2vw;
+    width: 90%;
+}
+.Womens_news_letter .btns{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1vw;
+    
+}
+.Womens_news_letter .btns a{
+    background-color: rgb(255, 64, 64);
+    color: white;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.2vw;
+    gap: 0.2vw;
+    padding: 0.8vw 2.5vw;
+}
+@media screen and (max-width:1000px) {
+    .Womens_news_letter{
+        padding-top: 10vw;
+    }
+    .Womens_news_letter .right .text b{
+        font-size: 3vw;
+    }
+    .Womens_news_letter .right .text h1{
+        font-size: 4.5vw;
+    }
+    .Womens_news_letter .right .text p{
+        font-size: 1.5vw;
+    }
+    .Womens_news_letter .btns{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 1.5vw;
+    }
+    .Womens_news_letter .btns a{
+        font-size: 1.5vw;
+        gap: 0.2vw;
+        padding: 1.2vw 3vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .Womens_news_letter .right .text b{
+        font-size: 3.5vw;
+    }
+    .Womens_news_letter .right .text h1{
+        font-size: 5vw;
+    }
+    .Womens_news_letter .right .text p{
+        font-size: 1.8vw;
+        width: 90%;
+    }
+    .Womens_news_letter .btns a{
+        font-size: 1.8vw;
+        padding: 1.5vw 3vw;
+    }
+}
+@media screen and (max-width:500px) {
+    .Womens_news_letter{
+        padding-top: 15vw;
+        gap: 8vw;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        font-family: 'Cabin';
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
+    }
+    .Womens_news_letter .left{
+        width: 100%;
+    }
+    .Womens_news_letter .right{
+        width: 100%;
+        padding: 0vw 5vw;
+        text-align: center;
+    }
+    .Womens_news_letter .right .text{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .Womens_news_letter .right .text b{
+        font-size: 8vw;
+    }
+    .Womens_news_letter .right .text h1{
+        font-size: 10vw;
+    }
+    .Womens_news_letter .right .text p{
+        font-size: 4vw;
+        width: 100%;
+    }
+    .Womens_news_letter .btns {
+        width: 100%;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .Womens_news_letter .btns{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 6vw;
+        padding-top: 4vw;
+    }
+    .Womens_news_letter .btns a{
+        font-size: 4vw;
+        gap: 0.2vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 50%;
+        padding: 4vw 0vw;
+    }
+}

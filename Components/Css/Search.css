@@ -1,0 +1,114 @@
+.Search{
+    width: 100%;
+
+    height: -webkit-max-content;
+
+    height: -moz-max-content;
+
+    height: max-content;
+    padding: 2vw ;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: white;
+    position: relative;
+}
+.Search input{
+    width: 50%;
+    font-size: 1vw;
+    padding: 1vw 1vw;
+    border: 1px solid black;
+    -webkit-animation-name: fontanimation;
+            animation-name: fontanimation;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-duration: 1;
+            animation-duration: 1;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+.Search .cross{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2vw 4vw;
+}
+.Search .cross .icon{
+    font-size: 2vw;
+    background-color: black;
+    color: white;
+    height:-webkit-max-content;
+    height:-moz-max-content;
+    height:max-content;
+    padding: 0.3vw;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    cursor: pointer;
+}
+@-webkit-keyframes fontanimation {
+    from{
+        font-size: 0vw;
+    }
+}
+@keyframes fontanimation {
+    from{
+        font-size: 0vw;
+    }
+}
+@media screen and (max-width:1000px) {
+    .Search{
+        padding: 5vw;
+    }
+    .Search input{
+        font-size: 2vw;
+        width: 100%;
+        padding: 2vw 2vw;
+        margin-top: 6vw;
+    }
+    .Search .cross{
+        padding: 3vw;
+    }
+    .Search .cross .icon{
+        font-size: 4vw;
+
+    }
+}
+@media screen and (max-width:768px) {
+    .Search{
+        padding: 5vw;
+    }
+    .Search input{
+        font-size: 2.5vw;
+        padding: 2.5vw 2vw;
+        margin-top: 10vw;
+    }
+    .Search .cross{
+        padding: 4vw;
+    }
+    .Search .cross .icon{
+        font-size: 6vw;
+
+    }
+}
+@media screen and (max-width:500px) {
+    .Search{
+        padding: 10vw 5vw;
+    }
+    .Search input{
+        font-size: 3.5vw;
+        padding: 4vw 3vw;
+        margin-top: 12vw;
+    }
+    .Search .cross{
+        padding: 6vw;
+    }
+    .Search .cross .icon{
+        font-size: 8vw;
+        padding: 1vw;
+
+    }
+}

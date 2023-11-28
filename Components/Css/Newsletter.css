@@ -1,0 +1,212 @@
+.Newsletter{
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin-top: 5vw;
+    padding: 2vw 10vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-position: center;
+    font-family: 'Cabin';
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 4vw;
+    background-color: #2d3436;
+background-image: -o-linear-gradient(135deg, #2d3436 0%, #000000 74%);
+background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Newsletter .left{
+width: 50%;
+}
+.Newsletter .right{
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1vw;
+}
+.Newsletter .left .img{
+    width: 100%;
+}
+.Newsletter .left .img img{
+    width: 100%;
+}
+.Newsletter .right b{
+    font-size: 2vw;
+    color: rgb(255, 64, 64);
+}
+.Newsletter .right h1{
+    font-size: 3vw;
+}
+.Newsletter .right p{
+    font-size: 1vw;
+    width: 90%;
+}
+.Newsletter .right .btns{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1vw;
+}
+.Newsletter .right .btns a{
+    background-color: rgb(93, 151, 6);
+    color: white;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.2vw;
+    gap: 0.2vw;
+    padding: 0.8vw 1.5vw;
+}
+.Newsletter .right .btns a:nth-child(2){
+  background-color: rgb(255, 64, 64);
+}
+.Newsletter .right .btns a .icon{
+    font-size: 1.5vw;
+}
+@media screen and (max-width: 1400px) {
+    .Newsletter .right b{
+        font-size: 2.1vw;
+    }
+    .Newsletter .right h1{
+        font-size: 3.1vw;
+    }
+    .Newsletter .right p{
+        font-size: 1.1vw;
+    }
+    .Newsletter .right .btns{
+        gap: 1.1vw;
+    }
+    .Newsletter .right .btns a{
+        font-size: 1.3vw;
+        gap: 0.3vw;
+        padding: 0.9vw 1.6vw;
+    }
+}
+@media screen and (max-width:1000px) {
+    .Newsletter{
+        margin-top: 10vw;
+        padding: 4vw 5vw;
+    }
+    .Newsletter .right{
+        gap: 1.5vw;
+    }
+    .Newsletter .right b{
+        font-size: 3vw;
+    }
+    .Newsletter .right h1{
+        font-size: 4vw;
+    }
+    .Newsletter .right p{
+        font-size: 1.5vw;
+        width: 100%;
+    }
+    .Newsletter .right .btns a{
+        font-size: 1.7vw;
+        gap: 0.5vw;
+        padding: 1.2vw 2vw;
+    }
+    .Newsletter .right .btns a .icon{
+        font-size: 2vw;
+    }
+    .Newsletter .right .btns{
+        gap: 2vw;
+    }
+}
+@media screen and (max-width:768px) {
+    .Newsletter{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 4vw 5vw;
+    }
+    .Newsletter .right{
+       width: 100%;
+       text-align: center;
+       gap: 2.5vw;
+    }
+    .Newsletter .left{
+        width: 100%;
+     }
+     .Newsletter .right b{
+        font-size: 4vw;
+    }
+    .Newsletter .right h1{
+        font-size: 6vw;
+    }
+    .Newsletter .right p{
+        font-size: 2vw;
+    
+    }
+    .Newsletter .right .btns{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        gap: 2vw;
+    }
+    .Newsletter .right .btns a{
+        font-size: 2vw;
+        gap: 1vw;
+        padding: 2vw 4vw;
+    }
+    .Newsletter .right .btns a .icon{
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width:500px) {
+    .Newsletter{
+        margin-top: 15vw;
+        padding: 8vw 5vw;
+    }
+    .Newsletter .right{
+       gap: 3.5vw;
+    }
+    .Newsletter .left{
+        width: 100%;
+     }
+     .Newsletter .right b{
+        font-size: 6vw;
+    }
+    .Newsletter .right h1{
+        font-size: 10vw;
+    }
+    .Newsletter .right p{
+        font-size: 4vw;
+    
+    }
+    .Newsletter .right .btns{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        gap: 4vw;
+    }
+    .Newsletter .right .btns a{
+        font-size: 5vw;
+        gap: 2vw;
+        padding: 4vw 6vw;
+    }
+    .Newsletter .right .btns a .icon{
+        font-size: 6vw;
+    }
+}

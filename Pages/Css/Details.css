@@ -1,0 +1,342 @@
+.details{
+    width: 100%;
+    display: flex;
+    font-family: 'Cabin';
+    padding:5vw 5vw;
+    padding-bottom: 0vw;
+    gap: 2vw;
+}
+.details .left{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100%;
+    gap: 1vw;
+}
+.details .left .img{
+    width: 100%;
+}
+.details .left .img img{
+    width: 100%;
+    display: block;
+}
+.details .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.details .right .content{
+   display: flex;
+   flex-direction: column;
+   gap: 0.5vw;
+}
+.details .right .content .heading h1{
+font-size: 3vw;
+}
+ .details .right .content .heading p{
+    font-size: 1vw;
+}
+.details .right .content .stars{
+ display: flex;
+ align-items: center;
+ gap: 0.5vw;
+}
+.details .right .content .stars p{
+   font-size: 1vw;
+}
+.details .right .content .stars .icon{
+    font-size: 1vw;
+    color: goldenrod;
+}
+.details .right .content .price h2{
+    font-size: 1.5vw;
+    color:rgb(255, 64, 64);
+}
+.details .right .content h2 span{
+  color: black;
+  font-size: 1vw;
+}
+.details .quantity{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    width: max-content;
+}
+.details .quantity p{
+   font-size: 1vw;
+}
+.details .quantity  .quantity_btn{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    width: max-content;
+    border: 1px solid gainsboro;
+}
+.details .quantity .quantity_btn .icon{
+    font-size: 1.2vw;
+    background-color: rgb(255, 64, 64);
+    width: max-content;
+    height: max-content;
+    color: white;
+    padding: 0.5vw 1vw;
+}
+.details .quantity .sec_1 .quantity_btn p{
+    font-size: 1.2vw;
+    color: black;
+}
+.details .add_cart{
+    padding-top: 1vw;
+    display: flex;
+    gap: 1vw;
+}
+.details .add_cart a{
+    width: max-content;
+    background-color:  rgb(255, 64, 64);
+    padding: 0.8vw 2vw;
+    color: white;
+    font-size: 1vw;
+    text-decoration: none;
+}
+.details .add_cart a:nth-child(2){
+    background-color: rgb(93, 151, 6);
+}
+.reviews{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.reviews .heading h1{
+    font-size: 2vw;
+}
+.reviews .cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    overflow-x: scroll;
+}
+.reviews .cards .card{
+    width: 44.5vw;
+    background-color: gainsboro;
+    height: max-content;
+    padding: 2vw 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+.reviews .cards .card h2{
+    font-size: 1.5vw;
+}
+.reviews .cards .card p{
+    font-size: 1vw;
+    
+}
+@media screen and (max-width:1400px) {
+    .details .right .content .heading h1{
+        font-size: 3.1vw;
+        }
+         .details .right .content .heading p{
+            font-size: 1.1vw;
+        }
+        .details .right .content .stars p{
+           font-size: 1.1vw;
+        }
+        .details .right .content .stars .icon{
+            font-size: 1.1vw;
+            color: goldenrod;
+        }
+        .details .right .content .price h2{
+            font-size: 1.6vw;
+        }
+        .details .right .content h2 span{
+          font-size: 1.1vw;
+        }
+        .details .quantity p{
+           font-size: 1.1vw;
+        }
+        .details .quantity .quantity_btn .icon{
+            font-size: 1.3vw;
+            padding: 0.6vw 1.1vw;
+        }
+        .details .quantity .sec_1 .quantity_btn p{
+            font-size: 1.3vw;
+        }
+        .details .add_cart a{
+            padding: 0.9vw 2.1vw;
+            font-size: 1.1vw
+        }
+        
+}
+@media screen and (max-width:1000px) {
+    .details{
+        width: 100%;
+        flex-direction: column;
+        padding:5vw 5vw;
+        gap: 4vw;
+        padding-bottom: 0vw;
+    }
+    .details .left{
+        width: 100%;
+    }
+    .details .right{
+        width: 100%;
+        gap: 4vw;
+    }
+    .details .right .content{
+       gap: 1vw;
+    }
+    .details .right .content .heading h1{
+    font-size: 6vw;
+    }
+     .details .right .content .heading p{
+        font-size: 2vw;
+    }
+    .details .right .content .stars{
+     gap: 1vw;
+    }
+    .details .right .content .stars p{
+       font-size: 2vw;
+    }
+    .details .right .content .stars .icon{
+        font-size: 3vw;
+    }
+    .details .right .content .price h2{
+        font-size: 4.5vw;
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+    }
+    .details .right .content h2 span{
+      font-size: 3vw;
+    }
+    .details .quantity{
+        gap: 2vw;
+    }
+    .details .quantity p{
+       font-size: 2.5vw;
+    }
+    .details .quantity  .quantity_btn{
+        gap: 3vw;
+    }
+    .details .quantity .quantity_btn .icon{
+        font-size: 3vw;
+        padding: 1vw 2vw;
+    }
+    .details .quantity  .quantity_btn p{
+        font-size: 3vw;
+    }
+    .details .add_cart{
+        padding-top: 2vw;
+        gap: 1vw;
+    }
+    .details .add_cart a{
+        padding:2vw 4vw;
+        font-size: 2vw;
+    }
+    .reviews{
+        gap: 2vw;
+    }
+    .reviews .heading h1{
+        font-size: 4vw;
+    }
+    .reviews .cards .card{
+        width: 90vw;
+        padding: 2vw 2vw;
+        gap: 0.5vw;
+    }
+    .reviews .cards .card h2{
+        font-size: 2.5vw;
+    }
+    .reviews .cards .card p{
+        font-size: 2vw;
+        
+    }
+}
+@media screen and (max-width:500px) {
+    .details{
+        padding:5vw 5vw;
+        gap: 8vw;
+        padding-bottom: 0vw;
+    }
+    .details .left{
+        width: 100%;
+    }
+    .details .right{
+        width: 100%;
+        gap: 8vw;
+    }
+    .details .right .content{
+        gap: 2vw;
+     }
+     .details .right .content .heading h1{
+     font-size: 10vw;
+     }
+      .details .right .content .heading p{
+         font-size: 4vw;
+     }
+     .details .right .content .stars{
+      gap: 2vw;
+     }
+     .details .right .content .stars p{
+        font-size: 4vw;
+     }
+     .details .right .content .stars .icon{
+        font-size: 5vw;
+     }
+     .details .right .content .price h2{
+        font-size: 6.5vw;
+        gap: 2vw;
+    }
+    .details .right .content h2 span{
+      font-size: 4vw;
+    }
+    .details .quantity{
+        gap: 4vw;
+    }
+    .details .quantity p{
+       font-size: 4.5vw;
+    }
+    .details .quantity  .quantity_btn{
+        gap: 6vw;
+    }
+    .details .quantity .quantity_btn .icon{
+        font-size: 6vw;
+        padding: 2vw 3vw;
+    }
+    .details .quantity  .quantity_btn p{
+        font-size: 6vw;;
+    }
+    .details .add_cart{
+        padding-top: 4vw;
+        flex-wrap: wrap;
+        gap: 2vw;
+    }
+    .details .add_cart a{
+        padding:3vw 8vw;
+        font-size: 4vw;
+    }
+    .details .add_cart a:nth-child(2){
+        width: 50%;
+        text-align: center;
+    }
+    .reviews{
+        gap: 4vw;
+    }
+    .reviews .heading h1{
+        font-size: 8vw;
+    }
+    .reviews .cards .card{
+        width: 90vw;
+        padding: 5vw 2vw;
+        gap: 1vw;
+    }
+    .reviews .cards .card h2{
+        font-size: 5.5vw;
+    }
+    .reviews .cards .card p{
+        font-size: 4vw;
+        
+    }
+}

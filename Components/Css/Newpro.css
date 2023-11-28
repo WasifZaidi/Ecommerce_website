@@ -1,0 +1,460 @@
+.Product{
+    padding: 0vw 5vw;
+    padding-top: 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: 'Cabin';
+    gap: 2vw;
+}
+.Product .heading{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.Product .heading .logo h1{
+    font-size: 3vw;
+}
+.Product .heading .logo h1 span{
+    border-bottom: 3px solid rgb(255, 64, 64);
+}
+.Product .links{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 2vw;
+    gap: 2vw;
+}
+.Product .links p{
+ text-decoration: none;
+ font-size: 1.2vw;
+ color: black;
+}
+.Product .links  .active{
+    border-bottom: 3px solid rgb(255, 64, 64);
+}
+.Product .cards{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1vw 1fr 1vw 1fr 1vw 1fr;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    gap: 2vw 1vw;
+}
+.Product .cards .card{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    gap: 0.5vw;
+}
+.Product .cards a{
+    text-decoration: none;
+    color: black;
+}
+.Product .cards .card:hover{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 1s all ease;
+    -o-transition: 1s all ease;
+    transition: 1s all ease;
+    z-index: 1000;
+    cursor: pointer;
+    padding: 1vw;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.Product .cards .card .img{
+    width: 100%;
+}
+.Product .cards .card .img img{
+    width: 100%;
+    display: block;
+}
+.Product .cards .card .text{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.5vw;
+}
+.Product .cards .card .top_section{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.Product .cards .card .top_section h1{
+   font-size: 1vw;
+   font-weight: 100;
+}
+.Product .cards .card .top_section p{
+    font-size: 0.9vw;
+    color: rgb(61, 61, 61);
+}
+.Product .cards .card .medium{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.Product .cards .card .medium b{
+font-size: 1vw;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+gap: 1vw;
+}
+.Product .cards .card .medium b span{
+   color: rgb(0, 0, 0);
+   text-decoration: line-through;
+   -webkit-text-decoration-color: red;
+           text-decoration-color: red;
+   text-decoration-thickness: 1.5px;
+}
+.Product .cards .card .medium a{
+    background-color: rgb(93, 151, 6);
+    color: white;
+    text-decoration: none;
+    font-size: 1vw;
+    padding: 0.5vw 1vw;
+}
+.Product .sale{
+position: absolute;
+padding: 1vw;
+top: 0;
+right: 0;
+}
+.Product .sale a{
+    background-color: rgb(255, 64, 64) ;
+    text-decoration: none;
+    color: white;
+    padding: 0.5vw 1vw;
+    font-size: 1vw;
+}
+@media screen and (max-width:1400px) {
+    .Product .cards .card .text h2{
+        font-size: 1.1vw;
+     }
+     .Product .heading .logo h1{
+        font-size: 3.1vw;
+    }
+    .Product .cards .card .top_section h1{
+        font-size: 1.1vw;
+        font-weight: 100;
+     }
+     .Product .cards .card .top_section p{
+         font-size: 1vw;
+         color: rgb(61, 61, 61);
+     }
+     .Product .cards .card .medium b{
+        font-size: 1.1vw;
+        }
+        .Product .cards .card .medium a{
+            font-size: 1.1vw;
+            padding: 0.6vw 1.1vw;
+        }
+        .Product .sale a{
+            padding: 0.6vw 1.1vw;
+            font-size: 1.1vw;
+        }
+}
+@media screen and (max-width:1000px) {
+    .Product{
+        padding: 0vw 5vw;
+        padding-top: 10vw;
+        gap: 4vw;
+    }
+    .Product .heading{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
+        gap: 2vw;
+    }
+    .Product .heading .logo h1{
+        font-size: 6vw;
+    }
+    .Product .links{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-top: 0vw;
+        gap: 4vw;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        width: 100%;
+    }
+    .Product .links p{
+        font-size: 2vw;
+       }
+       .Product .cards{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1vw 1fr 1vw 1fr;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2vw 1vw;
+    }
+    .Product .cards .card{
+        background-color: none;
+        background-color:transparent;
+    }
+    .Product .cards .card:hover{
+        transform: none;
+        box-shadow: none;
+    
+    }
+    .Product .cards .card .text{
+      padding: 0vw;
+    }
+    .Product .cards .card .top_section h1{
+        font-size: 1.6vw;
+        
+     }
+     .Product .cards .card .top_section p{
+         font-size: 1.5vw;
+     }
+     .Product .cards .card .medium b{
+        font-size: 2vw;
+        }
+        .Product .cards .card .medium a{
+            font-size: 2vw;
+            padding: 1vw 2vw;
+    }
+    .Product .sale{
+        position: absolute;
+        padding: 2vw;
+        padding-top: 2vw;
+        top: 0;
+        right: 0;
+        }
+        .Product .sale a{
+            padding: 1vw 1.5vw;
+            font-size: 1.5vw;
+        }
+}
+@media screen and (max-width:768px) {
+    .Product{
+        padding: 0vw 5vw;
+        padding-top: 10vw;
+        gap: 4vw;
+    }
+    .Product .heading{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
+        gap: 2vw;
+    }
+    .Product .heading .logo h1{
+        font-size: 6vw;
+    }
+    .Product .links{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-top: 0vw;
+        gap: 4vw;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        width: 100%;
+    }
+    .Product .links p{
+        font-size: 2.5vw;
+       }
+ .Product .cards{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 2vw 1fr;
+        grid-template-columns: repeat(2,1fr);
+        gap: 4vw 2vw;
+    }
+    .Product .cards .card .text h2{
+        font-size: 3vw;
+     }
+     .Product .cards .card{
+        gap: 1vw;
+
+    }
+    .Product .cards .card .text{
+        gap: 1vw;
+    }
+
+    .Product .cards .card .top_section h1{
+       font-size: 2.3vw;
+       
+    }
+    
+    .Product .cards .card .top_section p{
+        font-size: 2.2vw;
+        color: rgb(61, 61, 61);
+    }
+    .Product .cards .card .medium {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        gap: 1vw;
+     }
+    .Product .cards .card .medium b{
+    font-size: 2.3vw;
+    gap: 2vw;
+    }
+    .Product .cards .card .medium a{
+        font-size: 2.3vw;
+        padding: 1.5vw 2vw;
+        text-align: center;
+        width: 100%;
+    }
+    .Product .sale{
+        position: absolute;
+        padding: 2vw;
+        padding-top: 2vw;
+        top: 0;
+        right: 0;
+        }
+        .Product .sale a{
+            padding: 1.5vw 2vw;
+            font-size: 2vw;
+        }
+}
+@media screen and (max-width:768px) {
+    .Product .links a{
+        font-size: 2.5vw;
+       }
+}
+@media screen and (max-width:500px) {
+    .Product{
+        padding: 0vw 5vw;
+        padding-top: 15vw;
+        gap: 6vw;
+    }
+    .Product .cards{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 4vw 1fr;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2vw;
+    }
+    .Product .heading{
+        gap: 8vw;
+    }
+    .Product .heading .logo h1{
+        font-size: 10vw;
+    }
+    .Product .links{
+        gap: 4vw;
+        -webkit-box-pack:center;
+            -ms-flex-pack:center;
+                justify-content:center;
+    }
+    .Product .links p{
+     font-size: 4vw;
+    }
+    .Product .cards .card .text{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 2vw;
+    }
+    .Product .cards .card .top_section{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
+    }
+    .Product .cards .card .top_section h1{
+       font-size: 5vw;
+       font-weight: 100;
+    }
+    .Product .cards .card .top_section p{
+        font-size: 4vw;
+        color: rgb(61, 61, 61);
+    }
+    .Product .cards .card .medium b{
+        font-size: 5vw;
+    }
+    .Product .cards .card .medium {
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: normal;
+           -ms-flex-direction: column;
+               flex-direction: column;
+       -webkit-box-align: start;
+           -ms-flex-align: start;
+               align-items: start;
+       gap: 3vw;
+    }
+    .Product .cards .card .medium b{
+        font-size: 5vw;
+        gap: 4vw;
+    }
+    .Product .cards .card .medium a{
+        font-size: 6vw;
+        display: none;
+        width: 100%;
+        text-align: center;
+        padding: 3vw 4vw;
+    }
+    .Product .sale{
+        position: absolute;
+        padding: 2vw;
+        padding-top: 4vw;
+        top: 0;
+        right: 0;
+        }
+        .Product .sale a{
+            padding: 2.5vw 3vw;
+            font-size: 2.5vw;
+        }
+}

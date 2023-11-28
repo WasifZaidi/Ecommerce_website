@@ -1,0 +1,244 @@
+.Header {
+  padding: 0vw 0vw;
+  font-family: 'Cabin';
+}
+
+.Header .main_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0vw;
+  width: 100%;
+  color: white;
+}
+
+.Header .main_section .left {
+  width: 50%;
+}
+
+.Header .main_section .left .card {
+  width: 100%;
+  position: relative;
+}
+
+.Header .main_section .left .card .img {
+  width: 100%;
+}
+
+.Header .main_section .left img {
+  width: 100%;
+  display: block;
+}
+
+.Header .main_section .left .content {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0vw 5vw;
+  gap: 1vw;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.Header .main_section .left .content h1 {
+  font-size: 4vw;
+}
+
+
+.Header .main_section .content p {
+  font-size: 1vw;
+  color: gainsboro;
+}
+
+.Header .main_section .content a {
+  font-size: 1vw;
+  border: 2px solid rgb(255, 64, 64);
+  color: white;
+  padding: 0.5vw 1vw;
+  text-decoration: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.Header .main_section .right {
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Header .main_section .right .card {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.Header .main_section .right .content {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0vw 2vw;
+  gap: 1vw;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Header .main_section .right .content h1 {
+  font-size: 2vw;
+}
+
+.Header .main_section .right .card .img {
+  width: 100%;
+  display: block;
+}
+
+.Header .main_section .right .card .img img {
+  width: 100%;
+  display: block;
+}
+@media screen and (max-width:1400px) {
+  .Header .main_section .content p {
+    font-size: 1.2vw;
+    color: gainsboro;
+  }
+  .Header .main_section .content a {
+    font-size: 1.2vw;
+    padding: 0.7vw 1.2vw;
+  }
+  .Header .main_section .left .content h1 {
+    font-size: 4.1vw;
+  }
+  .Header .main_section .right .content {
+    padding: 0vw 2.1vw;
+  }
+  
+  .Header .main_section .right .content h1 {
+    font-size: 2.1vw;
+  }
+  
+  
+}
+@media screen and (max-width:1000px) {
+  .Header .main_section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0vw;
+    width: 100%;
+  }
+
+  .Header .main_section .left {
+    width: 100%;
+  }
+
+  .Header .main_section .right {
+    width: 100%;
+  }
+
+  .Header .main_section .left .content {
+    gap: 2vw;
+  }
+
+  .Header .main_section .right .content {
+    gap: 2vw;
+  }
+
+  .Header .main_section .left .content h1 {
+    font-size: 8vw;
+    color: white;
+  }
+
+  .Header .main_section .left .content p {
+    font-size: 3vw;
+  }
+
+  .Header .main_section .left .content a {
+    font-size: 3vw;
+    padding: 1vw 2vw;
+  }
+
+  .Header .main_section .right .content h1 {
+    font-size: 4vw;
+  }
+
+  .Header .main_section .right .content p {
+    font-size: 2vw;
+  }
+
+  .Header .main_section .right .content a {
+    font-size: 2vw;
+    padding: 1vw 2vw;
+  }
+}
+
+@media screen and (max-width:500px) {
+
+  .Header .main_section .left .content h1 {
+    font-size: 10vw;
+  }
+
+  .Header .main_section .left .content {
+    padding: 0vw 4vw;
+    gap: 4vw;
+  }
+
+  .Header .main_section .left .content p {
+    font-size: 4vw;
+  }
+
+  .Header .main_section .left .content a {
+    font-size: 4vw;
+    padding: 2vw 5vw;
+  }
+
+  .Header .main_section .right {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Header .main_section .right .content {
+    padding: 0vw 4vw;
+    gap: 4vw;
+  }
+
+  .Header .main_section .right .content h1 {
+    font-size: 10vw;
+  }
+
+  .Header .main_section .right .content p {
+    font-size: 4vw;
+  }
+
+  .Header .main_section .right .content a {
+    font-size: 4vw;
+    padding: 2vw 5vw;
+  }
+}

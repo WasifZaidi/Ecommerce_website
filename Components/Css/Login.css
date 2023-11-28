@@ -1,0 +1,270 @@
+.Login{
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1vw;
+    background-color:black;
+    display: none;
+    color: white;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    font-family: 'Cabin';
+    position: relative;
+   padding: 2vw 10vw;
+}
+.Login .heading{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.5vw;
+}
+.Login .heading h1{
+    font-size: 2vw;
+    -webkit-animation-name: Fontsizeanimation;
+            animation-name: Fontsizeanimation;
+    -webkit-animation-duration:1s;
+            animation-duration:1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+.Login .heading p{
+    font-size: 1vw;
+    -webkit-animation-name: Fontsizeanimation;
+            animation-name: Fontsizeanimation;
+    -webkit-animation-duration:1s;
+            animation-duration:1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+.Login .form{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.5vw;
+}
+.Login .form .inputs{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 0.5vw 1fr 0.5vw 1fr;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.5vw;
+}
+.Login .form #Login{
+    -ms-grid-columns: (1fr);
+    grid-template-columns: repeat(2,1fr);
+    display: none;
+}
+.Login .form .inputs input{
+    border: 0px;
+    background-color:white;
+    -webkit-animation-name: Fontsizeanimation;
+            animation-name: Fontsizeanimation;
+    -webkit-animation-duration:1s;
+            animation-duration:1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    font-size: 1vw;
+    padding: 1vw 1vw;
+    width: 100%;
+    color: black;
+}
+.Login .form .submit a{
+    background-color: transparent;
+    font-size: 1vw;
+    padding: 1vw 1vw;
+    color: white;
+    border: 1PX solid white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+}
+.Login .note{
+    width: 100%;
+    text-align: center;
+}
+.Login .note p{
+    font-size: 1vw;
+}
+.Login .login_sign_up{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.Login .login_sign_up p{
+    font-size: 1vw;
+}
+.Login .login_sign_up #Sign_up_btn{
+    display: none;
+}
+.Login .login_sign_up #Sign_up{
+    display: none;
+}
+.Login .login_sign_up a{
+    color: white;
+}
+.Login .cross{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2vw;
+}
+.Login .cross .icon{
+    font-size: 2vw;
+    cursor: pointer;
+}
+@-webkit-keyframes Fontsizeanimation {
+    from{
+        font-size: 0vw;
+    }
+}
+@keyframes Fontsizeanimation {
+    from{
+        font-size: 0vw;
+    }
+}
+@media screen and (max-width:1000px) {
+    .Login{
+        padding: 5vw;
+        gap: 2vw;
+    }
+    .Login .heading h1{
+        font-size: 4vw;
+    }
+    .Login .heading p{
+        font-size: 2vw;
+    }
+    .Login .form{
+        gap: 1vw;
+    }
+    .Login .form .inputs{
+        gap: 1vw;
+    }
+    .Login .form .inputs input{
+        font-size: 1.5vw;
+        padding: 1.5vw 1vw;
+    }
+    .Login .form .submit a{
+        font-size: 1.5vw;
+        padding: 1.5vw 1vw;
+    }
+    .Login .note p{
+        font-size: 2vw;
+    }
+    .Login .login_sign_up p{
+        font-size: 2vw;
+    }
+    .Login .cross{
+        padding: 3vw;
+    }
+    .Login .cross .icon{
+        font-size: 4vw;
+    }
+}
+@media screen and (max-width:768px) {
+    .Login{
+        gap: 4vw;
+    }
+    .Login .heading h1{
+        font-size: 6vw;
+    }
+    .Login .heading p{
+        font-size: 2.5vw;
+    }
+    .Login .form{
+        gap: 2vw;
+    }
+    .Login .form .inputs{
+        gap: 1vw;
+        -ms-grid-columns: 1fr 1vw 1fr;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .Login .form .inputs input{
+        font-size: 2vw;
+        padding: 2vw 2vw;
+    }
+    .Login .form .submit a{
+        font-size: 2vw;
+        padding: 2vw 2vw;
+    }
+    .Login .note p{
+        font-size: 2.5vw;
+    }
+    .Login .login_sign_up p{
+        font-size: 2.5vw;
+    }
+    .Login .cross{
+        padding: 4vw;
+    }
+    .Login .cross .icon{
+        font-size: 6vw;
+    }
+}
+@media screen and (max-width:500px) {
+    .Login{
+        padding: 10vw 5vw;
+        gap: 8vw;
+    }
+    .Login .heading h1{
+        font-size: 8vw;
+    }
+    .Login .heading p{
+        font-size: 3.5vw;
+        padding-top: 1vw;
+    }
+    .Login .form{
+        gap: 4vw;
+    }
+    .Login .form .inputs{
+        gap: 1vw;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: repeat(1,1fr);
+        gap: 3vw;
+    }
+    .Login .form .inputs input{
+        font-size: 3.5vw;
+        padding: 4vw 3vw;
+    }
+    .Login .form .submit a{
+        font-size: 3.5vw;
+        padding: 4vw 3vw;
+    }
+    .Login .note p{
+        font-size: 3.5vw;
+    }
+    .Login .login_sign_up p{
+        font-size: 3.5vw;
+    }
+    .Login .cross{
+        padding: 6vw;
+    }
+    .Login .cross .icon{
+        font-size: 8vw;
+    }
+}

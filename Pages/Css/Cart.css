@@ -1,0 +1,323 @@
+.cart_Faviourite{
+    width: 100%;
+    padding: 2vw 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family:'Cabin';
+    gap: 2vw;
+}
+.cart_Faviourite .heading h1{
+    font-size: 3vw;
+}
+.cart_Faviourite .heading h1 span{
+    border-bottom: 3px solid rgb(255, 64, 64);
+}
+.cart_Faviourite .cart_Faviourite-section{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2vw 1fr 2vw 1fr;
+    grid-template-columns: repeat(3,1fr);   
+    gap: 2vw;
+    width: 100%;
+    position: relative;
+}
+.cart_Faviourite  #no_items{
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    font-size: 3vw;
+}
+
+.cart_Faviourite .cart_Faviourite-section .card{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1vw;
+    width: 100%;
+    padding: 1vw ;
+    background-color: gainsboro;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height:-webkit-max-content;
+    height:-moz-max-content;
+    height:max-content;
+
+}
+.cart_Faviourite .cart_Faviourite-section .card .img{
+    width: 50%;
+}
+.cart_Faviourite .cart_Faviourite-section .card .img img{
+    width: 100%;
+    display: block;
+}
+.cart_Faviourite .cart_Faviourite-section .card .text{
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.5vw;
+}
+.cart_Faviourite .cart_Faviourite-section .card .text h1{
+   font-size: 1.2vw;
+}
+.cart_Faviourite .cart_Faviourite-section .card .text .quantity{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1vw;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+.cart_Faviourite .cart_Faviourite-section .card .text .quantity p{
+   font-size: 1vw;
+}
+.cart_Faviourite .cart_Faviourite-section .card .text  .quantity_btn{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1vw;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    border: 1px solid gainsboro;
+}
+.cart_Faviourite .cart_Faviourite-section .card .text  .quantity .quantity_btn .icon{
+    font-size: 1.2vw;
+    background-color: rgb(255, 64, 64);
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    color: white;
+    padding: 0.5vw 1vw;
+}
+.cart_Faviourite .cart_Faviourite-section .card .text  .quantity .sec_1 .quantity_btn p{
+    font-size: 1.2vw;
+    color: black;
+}
+.cart_Faviourite .cart_Faviourite-section .card .text .price p{
+    font-size: 1.2vw;
+}
+.cart_Faviourite .cart_Faviourite-section .card .text .buy {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.cart_Faviourite .cart_Faviourite-section .card .text .buy a{
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    font-size: 1vw;
+    text-align: center;
+    padding: 1vw 1vw;
+}
+
+.cart_Faviourite  .clear-data a{
+    width: max-content;
+    background-color:  rgb(255, 64, 64);
+    padding: 0.8vw 2vw;
+    color: white;
+    font-size: 1vw;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+.cart_Faviourite  .clear-data a .icon{
+    font-size: 1.5vw;
+}
+@media screen and (max-width:1400px) {
+    .cart_Faviourite .cart_Faviourite-section .card{
+        padding-right: 3vw;
+    
+    }
+    .cart_Faviourite .cart_Faviourite-section .card .text h1{
+        font-size: 1.3vw;
+     }
+     .cart_Faviourite .cart_Faviourite-section .card .text .quantity p{
+        font-size: 1.1vw;
+     }
+     .cart_Faviourite .cart_Faviourite-section .card .text  .quantity .quantity_btn .icon{
+        font-size: 1.3vw;
+        padding: 0.6vw 1.1vw;
+    }
+    .cart_Faviourite .cart_Faviourite-section .card .text  .quantity .sec_1 .quantity_btn p{
+        font-size: 1.2vw;
+        color: black;
+    }
+    .cart_Faviourite .cart_Faviourite-section .card .text .price p{
+        font-size: 1.2vw;
+        padding-bottom: 0.5vw;
+    }
+    .cart_Faviourite .cart_Faviourite-section .card .text .buy a{
+        font-size: 1.1vw;
+        padding: 1vw 1vw;
+    }
+    .cart_Faviourite  .clear-data a{
+        padding: 0.9vw 2.1vw;
+        font-size: 1.1vw;
+    }
+    .cart_Faviourite  .clear-data a .icon{
+        font-size: 1.6vw;
+    }
+}
+@media screen and (max-width:1000px) {
+    .cart_Faviourite{
+        gap: 4vw;
+        padding-top: 5vw;
+    }
+    .cart_Faviourite .heading h1{
+        font-size: 6vw;
+    }
+    .cart_Faviourite  #no_items{
+        padding-top: 5vw;
+        font-size: 6vw;
+    }
+    .cart_Faviourite .cart_Faviourite-section{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 2vw 1fr;
+        grid-template-columns: repeat(2,1fr);   
+        gap: 2vw;
+    } 
+    
+    .cart_Faviourite .cart_Faviourite-section .card{
+        gap: 2vw;
+        padding: 2vw;
+    }
+    .cart_Faviourite .cart_Faviourite-section .card .text{
+        gap: 1.5vw;
+    }
+    .cart_Faviourite .cart_Faviourite-section .card .text h1{
+        font-size: 2vw;
+     }
+     .cart_Faviourite .cart_Faviourite-section .card .text .quantity p{
+        font-size: 1.8vw;
+     }
+     .cart_Faviourite .cart_Faviourite-section .card .text  .quantity .quantity_btn .icon{
+        font-size: 1.8vw;
+        padding: 1vw 1.2vw;
+    }
+    .cart_Faviourite .cart_Faviourite-section .card .text  .quantity .sec_1 .quantity_btn p{
+        font-size: 1.8vw;
+        color: black;
+    }
+    .cart_Faviourite .cart_Faviourite-section .card .text .price p{
+        font-size: 2.3vw;
+    }
+    .cart_Faviourite .cart_Faviourite-section .card .text .buy a{
+        font-size: 1.5vw;
+        padding: 1.5vw 1vw;
+    }
+    .cart_Faviourite  .clear-data a{
+        padding:2vw 4vw;
+        font-size: 2vw;
+        gap: 1vw;
+    }
+    .cart_Faviourite  .clear-data a .icon{
+        font-size: 2.6vw;
+    }
+}
+@media screen and (max-width:500px) {
+    .cart_Faviourite{
+        gap: 4vw;
+        padding-top: 5vw;
+        gap: 6vw;
+    }
+    .cart_Faviourite .heading h1{
+        font-size: 10vw;
+    }
+    .cart_Faviourite  #no_items{
+        padding-top: 12vw;
+        font-size: 10vw;
+    }
+    .cart_Faviourite .cart_Faviourite-section{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: repeat(1,1fr);   
+        gap: 8vw;
+    } 
+    
+    .cart_Faviourite .cart_Faviourite-section .card{
+        gap: 2vw;
+        padding: 2vw;
+    }
+    .cart_Faviourite .cart_Faviourite-section .card .text{
+        gap: 2vw;
+    }
+    .cart_Faviourite .cart_Faviourite-section .card .text h1{
+        font-size: 5vw;
+     }
+     .cart_Faviourite .cart_Faviourite-section .card .text .quantity{
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: start;
+      width: 100%;
+        gap: 2vw;
+    }
+     .cart_Faviourite .cart_Faviourite-section .card .text .quantity p{
+        font-size: 4vw;
+     }
+     .cart_Faviourite .cart_Faviourite-section .card .text  .quantity_btn{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+         width: 100%;
+        gap: 4vw;
+    }
+     .cart_Faviourite .cart_Faviourite-section .card .text  .quantity .quantity_btn .icon{
+        font-size: 4vw;
+        padding: 2vw 2vw;
+    }
+    .cart_Faviourite .cart_Faviourite-section .card .text  .quantity .sec_1 .quantity_btn p{
+        font-size: 4vw;
+        color: black;
+    }
+    .cart_Faviourite .cart_Faviourite-section .card .text .price p{
+        font-size: 4vw;
+    }
+    .cart_Faviourite .cart_Faviourite-section .card .text .buy a{
+        font-size: 4vw;
+        padding: 2.5vw 1vw;
+    }
+    .cart_Faviourite  .clear-data a{
+        padding:3vw 8vw;
+        font-size: 4vw;
+        gap: 2vw;
+    }
+    .cart_Faviourite  .clear-data a .icon{
+        font-size: 4.6vw;
+    }
+}

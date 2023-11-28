@@ -1,0 +1,274 @@
+.Buy_now{
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1vw;
+    background-color:black;
+    display: none;
+    color: white;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    font-family: 'Cabin';
+    position: relative;
+   padding: 2vw 10vw;
+}
+.Buy_now .heading{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.5vw;
+}
+.Buy_now .heading h1{
+    font-size: 2vw;
+    -webkit-animation-name: Fontsizeanimation;
+            animation-name: Fontsizeanimation;
+    -webkit-animation-duration:1s;
+            animation-duration:1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+.Buy_now .heading p{
+    font-size: 1vw;
+    -webkit-animation-name: Fontsizeanimation;
+            animation-name: Fontsizeanimation;
+    -webkit-animation-duration:1s;
+            animation-duration:1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+.Buy_now .form{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.5vw;
+}
+.Buy_now .form .inputs{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 0.5vw 1fr 0.5vw 1fr;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.5vw;
+}
+.Buy_now .form #Login{
+    -ms-grid-columns: (1fr);
+    grid-template-columns: repeat(2,1fr);
+    display: none;
+}
+.Buy_now .form .inputs input{
+    border: 0px;
+    background-color:white;
+    -webkit-animation-name: Fontsizeanimation;
+            animation-name: Fontsizeanimation;
+    -webkit-animation-duration:1s;
+            animation-duration:1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    font-size: 1vw;
+    padding: 1vw 1vw;
+    width: 100%;
+    color: black;
+}
+.Buy_now .form .submit a{
+    background-color: transparent;
+    font-size: 1vw;
+    padding: 1vw 1vw;
+    color: white;
+    border: 1PX solid white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+}
+.Buy_now .note{
+    width: 100%;
+    text-align: center;
+}
+.Buy_now .note p{
+    font-size: 1vw;
+}
+.Buy_now .Total_price{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.Buy_now .Total_price p{
+    font-size: 1vw;
+    text-align: center;
+}
+.Buy_now .Total_price p span{
+    font-size: 1.5vw;
+}
+.Buy_now .cross{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2vw;
+}
+.Buy_now .cross .icon{
+    font-size: 2vw;
+    cursor: pointer;
+}
+@-webkit-keyframes Fontsizeanimation {
+    from{
+        font-size: 0vw;
+    }
+}
+@keyframes Fontsizeanimation {
+    from{
+        font-size: 0vw;
+    }
+}
+@media screen and (max-width:1000px) {
+    .Buy_now{
+        padding: 5vw;
+        gap: 2vw;
+    }
+    .Buy_now .heading h1{
+        font-size: 4vw;
+    }
+    .Buy_now .heading p{
+        font-size: 2vw;
+    }
+    .Buy_now .form{
+        gap: 1vw;
+    }
+    .Buy_now .form .inputs{
+        gap: 1vw;
+    }
+    .Buy_now .form .inputs input{
+        font-size: 1.5vw;
+        padding: 1.5vw 1vw;
+    }
+    .Buy_now .form .submit a{
+        font-size: 1.5vw;
+        padding: 1.5vw 1vw;
+    }
+    .Buy_now .note p{
+        font-size: 2vw;
+    }
+    .Buy_now .Total_price p{
+        font-size: 2vw;
+    }
+    .Buy_now .Total_price p span{
+        font-size: 2.5vw;
+    }
+    .Buy_now .cross{
+        padding: 3vw;
+    }
+    .Buy_now .cross .icon{
+        font-size: 4vw;
+    }
+}
+@media screen and (max-width:768px) {
+    .Buy_now{
+        gap: 4vw;
+    }
+    .Buy_now .heading h1{
+        font-size: 6vw;
+    }
+    .Buy_now .heading p{
+        font-size: 2.5vw;
+    }
+    .Buy_now .form{
+        gap: 2vw;
+    }
+    .Buy_now .form .inputs{
+        gap: 1vw;
+        -ms-grid-columns: 1fr 1vw 1fr;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .Buy_now .form .inputs input{
+        font-size: 2vw;
+        padding: 2vw 2vw;
+    }
+    .Buy_now .form .submit a{
+        font-size: 2vw;
+        padding: 2vw 2vw;
+    }
+    .Buy_now .note p{
+        font-size: 2.5vw;
+    }
+    .Buy_now .Total_price p{
+        font-size: 2.5vw;
+    }
+    .Buy_now .Total_price p span{
+        font-size: 3vw;
+    }
+    .Buy_now .cross{
+        padding: 4vw;
+    }
+    .Buy_now .cross .icon{
+        font-size: 6vw;
+    }
+}
+@media screen and (max-width:500px) {
+    .Buy_now{
+        padding: 10vw 5vw;
+        gap: 8vw;
+    }
+    .Buy_now .heading h1{
+        font-size: 8vw;
+    }
+    .Buy_now .heading p{
+        font-size: 3.5vw;
+        padding-top: 1vw;
+    }
+    .Buy_now .form{
+        gap: 4vw;
+    }
+    .Buy_now .form .inputs{
+        gap: 1vw;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: repeat(1,1fr);
+        gap: 3vw;
+    }
+    .Buy_now .form .inputs input{
+        font-size: 3.5vw;
+        padding: 4vw 3vw;
+    }
+    .Buy_now .form .submit a{
+        font-size: 3.5vw;
+        padding: 4vw 3vw;
+    }
+    .Buy_now .note p{
+        font-size: 3.5vw;
+    }
+    .Buy_now .Total_price p{
+        font-size: 5vw;
+    }
+    .Buy_now .Total_price p span{
+        font-size: 5.5vw;
+    }
+    .Buy_now .cross{
+        padding: 6vw;
+    }
+    .Buy_now .cross .icon{
+        font-size: 8vw;
+    }
+}

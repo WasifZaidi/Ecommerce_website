@@ -1,0 +1,395 @@
+.Navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2vw 5vw;
+    padding-bottom: 0vw;
+    padding-bottom: 0.5vw;
+    font-family: 'Cabin';
+}
+
+.Navbar .logo {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+}
+
+.Navbar .logo h1 {
+    font-size: 3vw;
+    font-family: 'Lora';
+    
+}
+
+.Navbar .links {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+}
+
+.Navbar .links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2vw;
+    padding-top: 1vw;
+}
+
+.Navbar .links ul li {
+    font-size: 1.2vw;
+    list-style: none;
+}
+.Navbar .links ul li a {
+   text-decoration: none;
+   color: black;
+}
+
+.Navbar .links ul .active {
+    border-bottom: 3px solid rgb(255, 64, 64);
+    padding-bottom: 0.1vw;
+}
+
+.Navbar .login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3vw;
+}
+
+.Navbar .login p {
+    font-size: 1vw;
+}
+
+.Navbar .login .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.5vw;
+}
+
+.Navbar .login .icons .box {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 1vw;
+    position: relative;
+    padding-bottom: 0vw;
+    padding-left: 0vw;
+}
+
+.Navbar .login .icons .quantity {
+    top: 0;
+    position: absolute;
+    right: 0;
+}
+
+.Navbar .login .icons .quantity p {
+    font-size: 0.7vw;
+    padding: 0.2vw 0.5vw;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+}
+
+.Navbar .login .icons .icon {
+    font-size: 1.5vw;
+}
+
+.Navbar .login .icons .icon_profile {
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    font-size: 1.5vw;
+    padding: 0.5vw;
+}
+
+.Navbar .menu_icon {
+    display: none;
+}
+
+.res_navbar {
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+    .Navbar {
+        padding: 2vw 5vw;
+        padding-bottom: 2vw;
+    
+    }
+
+    .Navbar .links {
+        display: none;
+    }
+
+    .Navbar .logo h1 {
+        font-size: 6vw;
+        -webkit-animation-name: fontsizeanimation;
+                animation-name: fontsizeanimation;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+    }
+
+    .Navbar .login {
+        display: none;
+    }
+
+    .Navbar .menu_icon {
+        display: block;
+        border-radius: 0px;
+    }
+
+    .Navbar .menu_icon {
+        display: block;
+        border: 1px solid black;
+    }
+
+    .Navbar .menu_icon .icon {
+        font-size: 8vw;
+        -webkit-animation-name: fontsizeanimation;
+                animation-name: fontsizeanimation;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+    }
+    .res_navbar{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        display: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 4vw;
+        width: 100%;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        font-family:'Cabin';
+        padding: 4vw 5vw;
+        background-color: white;
+    }
+    .res_navbar .heading{
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    .res_navbar .heading h1{
+        font-size: 4vw;
+        -webkit-animation-name: fontsizeanimation;
+                animation-name: fontsizeanimation;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+    }
+    .res_navbar .heading .icon{
+        font-size: 6vw;
+        -webkit-animation-name: fontsizeanimation;
+                animation-name: fontsizeanimation;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+    }
+    .res_navbar .icons{
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        gap: 4vw;
+    }
+    .res_navbar .icons .box{
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        padding: 1vw;
+        position: relative;
+    }
+    .res_navbar .icons .box .quantity{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .res_navbar .icons .box .quantity p{
+        font-size: 1.5vw;
+        padding: 0.5vw 1vw;
+        background-color: black;
+        border-radius: 50px;
+        color: white;
+    }
+    .res_navbar .icons .box .icon{
+        font-size: 6vw;
+        -webkit-animation-name: fontsizeanimation;
+                animation-name: fontsizeanimation;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+    }
+    .res_navbar .icons .box .icon .black_bg{
+        padding: 1vw;
+        background-color: black;
+        color: white;
+    }
+    .res_navbar .icons .box #black_bg{
+        padding: 1vw;
+         width: -webkit-max-content;
+         width: -moz-max-content;
+         width: max-content;
+         height: -webkit-max-content;
+         height: -moz-max-content;
+         height: max-content;
+        background-color: black;
+        border-radius: 50px;
+        color: white;
+    }
+    .res_navbar .links{
+        padding-top: 3vw;
+    }
+    .res_navbar .links ul{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        gap: 4vw;
+    }
+    .res_navbar .links ul li{
+        list-style: none;
+        font-size: 3vw;
+        -webkit-animation-name: fontsizeanimation;
+                animation-name: fontsizeanimation;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+    }
+    .res_navbar .links ul li a{
+        text-decoration: none;
+        color: black;
+    }
+}
+@-webkit-keyframes fontsizeanimation  {
+    from{
+        font-size: 0vw;
+    }
+}
+@keyframes fontsizeanimation  {
+    from{
+        font-size: 0vw;
+    }
+}
+@media screen and (max-width:500px) {
+    .Navbar {
+        padding: 4vw 5vw;
+        padding-bottom: 4vw;
+    }
+
+    .Navbar .links {
+        display: none;
+    }
+
+    .Navbar .logo h1 {
+        font-size: 8vw;
+    }
+
+    .Navbar .menu_icon .icon {
+        font-size: 10vw;
+    }
+    .res_navbar{
+        gap: 4vw;
+        padding: 6vw 5vw;
+    }
+    .res_navbar .heading{
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    .res_navbar .heading h1{
+        font-size: 6vw;
+    }
+    .res_navbar .heading .icon{
+        font-size: 8vw;
+    }
+    .res_navbar .icons{
+        gap: 6vw;
+    }
+    .res_navbar .icons .box{
+        padding: 2vw;
+    }
+
+    .res_navbar .icons .box .quantity p{
+        font-size: 2.5vw;
+        padding: 1vw 2vw;
+    }
+    .res_navbar .icons .box .icon{
+        font-size: 8vw;
+    }
+    .res_navbar .icons .box #black_bg{
+        padding: 2vw;
+    }
+    .res_navbar .links ul{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 6vw;
+    }
+    .res_navbar .links ul li{
+        list-style: none;
+        font-size: 5vw;
+    }
+}

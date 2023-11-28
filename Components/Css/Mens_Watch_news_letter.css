@@ -1,0 +1,202 @@
+.Mens_news_letter {
+    width: 100%;
+    margin-top: 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: 'Cabin';
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+
+}
+
+.Mens_news_letter .top_section {
+    width: 50%;
+}
+
+.Mens_news_letter .top_section .img {
+    width: 100%;
+}
+
+.Mens_news_letter .top_section .img img {
+    width: 100%;
+}
+
+.Mens_news_letter .bottom_section {
+    width: 100%;
+    padding: 0vw 10vw;
+}
+
+.Mens_news_letter .bottom_section .text {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1vw;
+}
+
+.Mens_news_letter .bottom_section .text b {
+    font-size: 3vw;
+    color: rgb(255, 64, 64);
+}
+
+.Mens_news_letter .bottom_section .text h1 {
+    font-size: 4vw;
+}
+
+.Mens_news_letter .bottom_section .text p {
+    font-size: 1.5vw;
+    color: rgb(88, 88, 88);
+}
+
+.Mens_news_letter .bottom_section .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1vw;
+}
+
+.Mens_news_letter .bottom_section .btns a {
+    background-color: rgb(93, 151, 6);
+    color: white;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.5vw;
+    gap: 0.5vw;
+    padding: 1.2vw 2vw;
+}
+
+.Mens_news_letter .bottom_section .btns a:nth-child(2) {
+    background-color: rgb(255, 64, 64);
+}
+
+.Mens_news_letter .bottom_section .btns a .icon {
+    font-size: 2vw;
+}
+
+@media screen and (max-width:1000px) {
+    .Mens_news_letter {
+        margin-top: 10vw;
+    }
+
+    .Mens_news_letter .top_section {
+        width: 70%;
+    }
+
+    .Mens_news_letter .bottom_section .text {
+        gap: 2.5vw;
+    }
+
+    .Mens_news_letter .bottom_section {
+        padding: 0vw 5vw;
+    }
+
+    .Mens_news_letter .bottom_section .text b {
+        font-size: 4vw;
+        color: rgb(255, 64, 64);
+    }
+
+    .Mens_news_letter .bottom_section .text h1 {
+        font-size: 6vw;
+    }
+
+    .Mens_news_letter .bottom_section .text p {
+        font-size: 2vw;
+        color: rgb(88, 88, 88);
+    }
+
+    .Mens_news_letter .bottom_section .btns {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        gap: 2vw;
+    }
+
+    .Mens_news_letter .bottom_section .btns a {
+        font-size: 2vw;
+        gap: 1vw;
+        padding: 2vw 4vw;
+        width: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .Mens_news_letter .bottom_section .btns a .icon {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .Mens_news_letter {
+        margin-top: 15vw;
+    }
+
+    .Mens_news_letter .top_section {
+        width: 100%;
+    }
+
+    .Mens_news_letter .bottom_section .text {
+        gap: 3.5vw;
+    }
+
+    .Mens_news_letter .bottom_section .text b {
+        font-size: 6vw;
+        color: rgb(255, 64, 64);
+    }
+
+    .Mens_news_letter .bottom_section .text h1 {
+        font-size: 10vw;
+    }
+
+    .Mens_news_letter .bottom_section .text p {
+        font-size: 4vw;
+        color: rgb(88, 88, 88);
+    }
+
+    .Mens_news_letter .bottom_section .btns {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        gap: 4vw;
+    }
+
+    .Mens_news_letter .bottom_section .btns a {
+        font-size: 5vw;
+        gap: 2vw;
+        width: 50%;
+        padding: 4vw 3vw;
+    }
+
+    .Mens_news_letter .bottom_section .btns a .icon {
+        font-size: 6vw;
+    }
+}
